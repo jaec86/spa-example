@@ -1,0 +1,31 @@
+.link {
+    @apply .relative
+    .text-purple-dark
+    .no-underline
+    .cursor-pointer
+    .transition;
+    &:disabled {
+        @apply .opacity-50
+        .cursor-not-allowed;
+    }
+    &:after {
+        content: '';
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        transform: translateX(-50%);
+        @apply .absolute
+        .pt-px
+        .bg-purple-light
+        .transition;
+    }
+    &:hover,
+    &:focus {
+        outline: 0;
+        @apply .text-purple-light;
+    }
+    &:hover:after,
+    &:focus:after {
+        @apply .w-full;
+    }
+}

@@ -1,0 +1,26 @@
+a {
+    @apply .no-underline;
+}
+
+.transition {
+    transition: all 500ms ease;
+}
+
+.fs-rotate {
+    animation: fs-rotate 750ms linear infinite;
+}
+
+@keyframes fs-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.fs-beat {
+    animation: fs-beat 1400ms infinite;
+}
+
+@keyframes fs-beat {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

@@ -1,0 +1,52 @@
+.btn {
+    @apply .relative
+    .p-3
+    .rounded
+    .border
+    .border-purple-dark
+    .bg-purple-dark
+    .text-white
+    .transition
+    .tracking-wide
+    .uppercase;
+    &:disabled {
+        @apply .opacity-50;
+    }
+    &:hover {
+        @apply .border-purple-light
+        .bg-purple-light
+        .z-10;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 3px rgba(#794acf, 0.3);
+        @apply .border-purple-light
+        .bg-purple-light
+        .z-10;
+    }
+}
+
+.btn-border {
+    @apply .p-3
+    .rounded
+    .border
+    .border-purple-dark
+    .bg-transparent
+    .text-purple-dark
+    .transition
+    .tracking-wide
+    .uppercase;
+    &:disabled {
+        @apply .opacity-50;
+    }
+    &:hover {
+        @apply .border-purple-light
+        .text-purple-light;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 3px rgba(#794acf, 0.3);
+        @apply .border-purple-light
+        .text-purple-light;
+    }
+}
